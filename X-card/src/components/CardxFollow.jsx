@@ -1,14 +1,8 @@
-import { useState } from "react";
+import { Button } from "./Button";
 import React from "react";
-import "./CardX.css";
+import "./CardxFollow.css";
 
-export function CardX({name, username}) {
-  const [isFollowed, setIsFollowed] = useState(false);
-
-  function handleOnClick(){
-    setIsFollowed(!isFollowed);
-  }
-  const text = isFollowed ? 'Unfollow' : 'Follow';
+export function CardxFollow({ name, username, isFollowing }) {
   return (
     <>
       <div className="container-card">
@@ -24,7 +18,7 @@ export function CardX({name, username}) {
           <p className="small-gray">@{username}</p>
         </aside>
         <section className="container-button">
-          <button onClick={handleOnClick} className="button-card">{text}</button>
+          <Button isFollowing={isFollowing} />
         </section>
       </div>
     </>

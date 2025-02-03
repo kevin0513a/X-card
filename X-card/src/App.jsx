@@ -1,13 +1,13 @@
-import { CardX } from "./components/CardX";
+import { CardxFollow } from "./components/CardxFollow";
 import "./App.css";
 
 function App() {
   return (
     <>
       <div className="container-cardApp">
-        <CardX name='Imantado' username='imantadotv' />
-        <CardX name='Miguel Angel Duran' username='midudev' />
-        <CardX name='AuronPlay' username='auronplay' />
+        <CardxFollow isFollowing={true} name='imantado' username='imantadotv' />
+        <CardxFollow isFollowing name='Miguel Angel Duran' username='midudev' />
+        <CardxFollow isFollowing={false} name='auronPlay' username='auronplay' />
       </div>
     </>
   );
