@@ -1,0 +1,47 @@
+.container-news{
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.news{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.news:hover{
+    background-color: #1c1c1c;
+}
+
+.gray-small-news{
+    font-size: 13px;
+    color: gray;
+}
+
+.news p:nth-child(2){
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.style-ellipsis{
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.style-ellipsis:hover{
+    cursor: pointer;
+    color: #13527b;
+    background-color: #0a171f;
+}
+
