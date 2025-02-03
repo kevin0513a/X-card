@@ -1,0 +1,71 @@
+.container-cardApp {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.container-card {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  background-color: #080808;
+  color: white;
+  gap: 10px;
+  padding: 5px;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+.container-card:hover {
+  background-color: #1c1c1c;
+}
+
+.image-style {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.container-text {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0 0 0;
+  gap: 5px;
+  flex-grow: 1;
+  min-width: 0; /* Necesario para que el texto se ajuste en flexbox */
+  font-size: 16px;
+}
+
+.container-text strong {
+  display: block; /* Para que text-overflow funcione */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.small-gray {
+  color: gray;
+}
+
+.container-button {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.container-button button:hover{
+    cursor: pointer;
+}
+
+.button-card {
+  background-color: #fff;
+  color: black;
+  font-weight: bold;
+  border-radius: 20px;
+  border: 1px solid white;
+  padding: 5px 15px;
+  cursor: pointer;
+}
