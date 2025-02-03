@@ -12,9 +12,9 @@
   background-color: #080808;
   color: white;
   gap: 10px;
-  padding: 5px;
   padding: 10px 10px;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .container-card:hover {
